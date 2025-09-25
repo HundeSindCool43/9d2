@@ -24,7 +24,6 @@
     }
     .container {
       width: 100vw;
-      height: 100vh;
       box-sizing: border-box;
       padding: 48px 0;
       background: #fff;
@@ -39,21 +38,21 @@
       margin-bottom: 48px;
     }
     .termine-title {
-      margin-left: 170px; /* Überschrift leicht nach rechts */
+      margin-left: 170px;
       margin-bottom: 32px;
       font-size: 1.7em;
       font-weight: bold;
-      align-self: flex-start;
       color: #1a1a1a;
       position: relative;
+      align-self: flex-start;
     }
     .termine-list {
-      margin-left: 10px; /* Noch weiter nach links! */
+      margin-left: -80px; /* Noch weiter nach links! */
       margin-right: 144px;
       display: flex;
       flex-direction: column;
       gap: 36px;
-      width: calc(100vw - 154px);
+      width: calc(100vw - 64px);
       max-width: 700px;
       align-items: stretch;
     }
@@ -84,11 +83,11 @@
         margin-bottom: 18px;
       }
       .termine-list {
-        margin-left: 2px;
+        margin-left: 0px;
         margin-right: 12px;
         max-width: 95vw;
         gap: 18px;
-        width: calc(100vw - 14px);
+        width: calc(100vw - 12px);
       }
       .termin-box {
         font-size: 1em;
