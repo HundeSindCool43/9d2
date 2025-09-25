@@ -33,9 +33,10 @@
       align-items: center;
     }
     h1 {
-      color: white; /* Text innen */
-      -webkit-text-stroke: 2px black; /* schwarzer Rand */
+      color: white;
+      -webkit-text-stroke: 2px black;
       font-size: 48px;
+      margin-bottom: 48px;
     }
     .termine-title {
       margin-left: 64px;
@@ -47,41 +48,51 @@
     }
     .termine-list {
       margin-left: 144px;
+      margin-right: 144px;
       display: flex;
       flex-direction: column;
       gap: 36px;
-      width: 100%;
+      width: calc(100vw - 288px);
       max-width: 700px;
-      align-items: flex-start;
+      align-items: stretch;
     }
-    .termine-list span {
-      font-size: 1.35em;
+    .termin-box {
       background: #f2f4f8;
+      border: 2px solid #ccc;
+      border-radius: 16px;
       padding: 16px 30px;
-      border-radius: 8px;
-      width: fit-content;
       box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      font-size: 1.35em;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
     }
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       .container {
         padding: 14px 0;
       }
       h1 {
         font-size: 2em;
         padding: 8px 12px;
+        margin-bottom: 24px;
       }
       .termine-title {
         margin-left: 18px;
         font-size: 1em;
+        margin-bottom: 18px;
       }
       .termine-list {
-        margin-left: 28px;
+        margin-left: 12px;
+        margin-right: 12px;
         max-width: 95vw;
         gap: 18px;
+        width: calc(100vw - 24px);
       }
-      .termine-list span {
+      .termin-box {
         font-size: 1em;
         padding: 8px 12px;
+        border-radius: 10px;
       }
     }
   </style>
@@ -91,14 +102,14 @@
     <h1>Titel</h1>
     <div class="termine-title">Die nächsten Klassentermine</div>
     <div class="termine-list">
-      <span>1</span>
-      <span>2</span>
-      <span>3</span>
-      <span>4</span>
-      <span>5</span>
-      <span>6</span>
-      <span>7</span>
-      <span>8</span>
+      <div class="termin-box">1</div>
+      <div class="termin-box">2</div>
+      <div class="termin-box">3</div>
+      <div class="termin-box">4</div>
+      <div class="termin-box">5</div>
+      <div class="termin-box">6</div>
+      <div class="termin-box">7</div>
+      <div class="termin-box">8</div>
     </div>
   </div>
 </body>
